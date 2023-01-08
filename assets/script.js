@@ -8,7 +8,6 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 let currentQuestionIndex = 0
 let shuffledQuestions
 
-// console.log(startButton)
 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
@@ -143,15 +142,15 @@ var countdown =
     if(time_left <= 0)
           clearInterval(countdown);
           },1000);
-
-function below_10(){
-  if(time_left <= 10)
-    clock.classList.add('below10');
-}
-function decrement(){
-  time_left = time_left - 5;
-  return countdown()
-}                      
+        
+// function below_10(){
+//   if(time_left <= 10)
+//     clock.classList.add('below10');
+// }
+// function decrement(){
+//   time_left = time_left - 5;
+//   return countdown()
+// }                      
                             
 
 
