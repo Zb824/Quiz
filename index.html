@@ -9,13 +9,18 @@
   <title> My Quiz</title>
 
 </head>
+<section>
+  <div style = "position:fixed; left:80px; bottom:15px" id = "scores">
+   <h1>High Scores</h1>
+  </div>
+</section>
+
 <body>
   <div>
-  <section class="flex-container">
-    <div id="clock">90
-    
-<button class="btn" id="decrement" onclick="decrement()"></button>
-   <button class="btn" onclick="timer_reset()"></button> 
+    <section class="flex-container">
+      <div id="clock">90
+        
+        <button class="btn" onclick="timer_reset()"></button> 
   </div>
 
 
@@ -25,18 +30,15 @@
     
     <div id="question-container" class="hide">
       <div id="question">Question</div>
-      <div id="answer-buttons" class="btn-grid">
-          <button class="btn">Answer1</button>
-          <button class="btn">Answer2</button>
-          <button class="btn">Answer3</button>
-          <button class="btn">Answer4</button>
+        <div id="answer-buttons" class="btn-grid">
+  
       </div>
     </div>
 
 
   <div class="controls">
      <button id="start-btn" class="start-btn btn">Start Quiz</button>
-     <button id="next-btn" class="next-btn btn hide">Next Question</button>
+     <!-- <button  id="next-btn" class="next-btn btn hide">Next Question</button> -->
     </div>
 
   
